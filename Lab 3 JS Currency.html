@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Lab 3 JavaScript Currency </title>
+
+    <script>
+        function money() {
+            var dollars = document.getElementById("dollars").value;
+            var cash = (dollars*42.41);
+            var n = cash.toFixed(2);
+
+            document.getElementById("BritishPounds").value = (dollars * 0.73 + " British Pounds ");
+        }         
+    </script>
+
+    <body>
+        <h1> Dante's Money Exchange </h1>
+        <main>
+            
+            Enter American Dollars: <input type="text" id="dollars">
+            <input type="text" id="BritishPounds">
+            <button onClick="money()"> Convert </button>
+
+        </main>
+
+        <br>
+
+        <footer> Dante Polletta </footer>
+    </body>
+</html>
